@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Speed</title>
+</head>
+<body>
+    <p> Id="distance"></p>
+    <p> Id="time"></p>
+    <p> Id="result"></p>
+    <script>
+        var x = prompt("Please enter the value of distance in miles", "enter here");
+        var y = prompt("Please enter the value of time in minutes", "enter here");
+        var quotient = parseInt(x * 1609.34)/parseInt(y * 60);
+        alert(quotient);
+        document.getElementbyId("distance").InnerHTML = quotient;
+        document.getElementbyId("time").InnerHTML = quotient;
+        document.getElementbyId("result").InnerHTML = quotient;
+        
+    </script>
+</body>
+</html>
